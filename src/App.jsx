@@ -1,15 +1,17 @@
-import './App.css'
-import { Outlet } from 'react-router-dom'
-import Menu from './components/Menu'
-import Rodape from './components/Rodape'
+import Cabecalho from "./components/Cabecalho";
+import Rodape from "./components/Rodape";
+import { Outlet } from "react-router-dom";
 
-function App() {
-
+export default function App() {
+  //Área declarativa
+  let viteLogoAlt = "Vite Logo";
   return (
     <>
-    <Menu/>
-    <Outlet/>
-    <Rodape/>
+      {/* Área imperativa */}
+
+      <Cabecalho />
+        <Outlet/>
+      <Rodape />
     </>
-  )
+  );
 }
