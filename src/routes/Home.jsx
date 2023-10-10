@@ -1,11 +1,11 @@
+import styles from '../css/estilo.module.css'
 
 export default function Home() {
-
-  document.title = "Home";
-
   return (
-    <div>
-        <h1>COMPONENTE - HOME</h1>
-    </div>
+    <section className={styles.inicioHome}>
+        <h1>
+          Home - PRODUTOS
+          </h1>
+    </section>
   )
 }
